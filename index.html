@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style2.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Project1</title>
+  </head>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  width: 100%;
+  overflow: hidden;
+}
+#page1 {
+  width: 100%;
+  height: 100vh;
+}
+#page1 header {
+  width: 100%;
+  height: 15%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav {
+  /* background-color: lightblue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+nav a {
+  text-decoration: none;
+  color: grey;
+  font-size: 16px;
+}
+nav a:hover {
+  color: black;
+}
+#page1 h1 {
+  text-align: center;
+  margin-top: 1%;
+  font-size: 45px;
+  line-height: -100px;
+}
+#container {
+  width: 100%;
+  height: 75%;
+  /* background-color: lightgreen; */
+  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+#left {
+  width: 50%;
+  height: 80%;
+  overflow: hidden;
+  /* background-color: lightblue; */
+}
+#left img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+#right {
+  width: 30%;
+  height: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 20px;
+}
+#right form {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#page2 {
+  width: 100%;
+  height: 150vh;
+  /* background-color: lightblue; */
+  padding: 40px 30px;
+}
+#page2 h1{
+    font-size:40px;
+}
+#top{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: lightcyan; */
+}
+.place1{
+    width: 20%;
+    height: 85%;
+    /* background-color: lightpink; */
+    overflow: hidden;
+    transition: all ease 0.2s;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.place1 img{
+    width: 100%;
+    height: 60%;
+}
+.place1 h3{
+    font-size: 16px;
+}
+.place1 p{
+    font-size: 13px;
+}
+.place1:hover{
+    scale: 1.02;
+}
+.place1 button{
+    border: none;
+    background-color: #ff433a;
+    color: white;
+    width: 50%;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#bottom{
+    margin-top: 10%;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: lightcyan; */
+}
+footer{
+    width: 100%;
+    height: 70vh;
+    padding-top: 60px;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+#end{
+    width: 100%;
+    height: 60%;
+    background-color: #ff433a;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#end h3{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+#end ol a{
+    text-decoration: none;
+    color: white;
+}
+#social{
+    display: flex;
+    gap: 20px;
+}
+#social i{
+    font-size: 30px;
+    color: white;
+}
+  </style>
+  <body>
+    <div id="main">
+      <div id="page1">
+        <header>
+          <nav>
+            <div id="logo"><img src="holidify-logo.svg" alt="" /></div>
+            <input
+              style="
+                padding: 18px 18px;
+                padding-right: 100px;
+                font-size: 18px;
+                border-radius: 30px;
+                border: none;
+                background-color: rgb(244, 244, 244);
+              "
+              type="text"
+              placeholder="Search for places to visit"
+            />
+            <a href="">Home</a>
+            <a href="">Places</a>
+            <a href="">About</a>
+            <a href="">Blog</a>
+          </nav>
+        </header>
+        <h1>
+          Historical Places In India: Exploring the Rich History of India's
+          Heritage
+        </h1>
+        <div id="container">
+          <div id="left">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1697730429201-381b71f61427?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt=""
+            />
+          </div>
+          <div id="right">
+            <form style="align-items: center;">
+              <div
+                id="form-head"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  gap: 10px;
+                "
+              >
+                <h1 style="font-size: 25px">Fill the Form to</h1>
+                <h1 style="color: #ff433a; font-size: 25px">Get Free Quote</h1>
+              </div>
+              <input required
+                style="
+                  width: 100%;
+                  padding: 10px;
+                  font-size: 16px;
+                  border: 1px solid rgb(181, 178, 178);
+                  border-radius: 10px;
+                "
+                type="text"
+                placeholder="Going To (Where you are going?)"
+              />
+              <input required
+                style="
+                  font-size: 15px;
+                  width: 100%;
+                  padding: 10px;
+                  font-size: 16px;
+                  border: 1px solid rgb(181, 178, 178);
+                  border-radius: 10px;
+                "
+                type="text"
+                placeholder="Going To (Where you are going?)"
+              />
+                <input
+                  style=
+                  "color: grey;
+                    width: 100%;
+                    padding: 10px;
+                    font-size: 16px;
+                    border: 1px solid rgb(181, 178, 178);
+                    border-radius: 10px;
+                  "
+                  type="date"
+                  placeholder="Travel Date"
+                />
+                <input
+                style="
+                  width: 100%;
+                  padding: 10px;
+                  font-size: 16px;
+                  border: 1px solid rgb(181, 178, 178);
+                  border-radius: 10px;
+                "
+                type="text"
+                placeholder="Enter your name"
+              />
+              <input
+                style="
+                  width: 100%;
+                  padding: 10px;
+                  font-size: 16px;
+                  border: 1px solid rgb(181, 178, 178);
+                  border-radius: 10px;
+                "
+                type="number"
+                placeholder="Enter your number"
+              />
+              <input
+                style="
+                  width: 100%;
+                  padding: 10px;
+                  font-size: 16px;
+                  border: 1px solid rgb(181, 178, 178);
+                  border-radius: 10px;
+                "
+                type="email" 
+                placeholder="Enter your email"
+              />
+              <input id="btn" style="padding: 13px 40px; font-size: 16px; border: 1.5px solid#ff433a; background-color: #ff433a; color: white; border-radius: 10px; cursor: pointer; margin-top: 10px;" type="submit">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div id="page2">
+        <h1>Famous Historical Places in India</h1>
+        <div id="top">
+          <div class="place1">
+          <img src="https://images.unsplash.com/photo-1691512144629-4808599640b2?q=80&w=2155&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <div style="padding: 5px; display: flex; flex-direction: column;gap: 5px;">
+            <h3>Taj Mahal, Agra
+            </h3>
+            <p>As one of the famous historical places in India, ments that pool together a huge crowd due to its unique look and charm. </p>
+            <button>Send Enquiry</button>
+          </div>
+        </div>
+        <div class="place1">
+          <img src="https://images.unsplash.com/photo-1618128587777-c472aa97d836?q=80&w=1945&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <div style="padding: 5px; display: flex; flex-direction: column;gap: 5px;">
+            <h3>Palace, Jaipur
+            </h3>
+            <p>As one of the famous historical places in India, ments that pool together a huge crowd due to its unique look and charm. </p>
+            <button>Send Enquiry</button>
+          </div>
+        </div>
+        <div class="place1">
+          <img src="https://plus.unsplash.com/premium_photo-1697730373510-51b7fcf2ff52?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGluZGlhbiUyMGhpc3Rvcnl8ZW58MHwwfDB8fHww" alt="">
+          <div style="padding: 5px; display: flex; flex-direction: column;gap: 5px;">
+            <h3>Red Fort, Delhi
+            </h3>
+            <p>As one of the famous historical places in India, ments that pool together a huge crowd due to its unique look and charm. </p>
+            <button>Send Enquiry</button>
+          </div>
+        </div>
+        <div class="place1">
+          <img src="https://images.unsplash.com/photo-1600871215197-c68059ada01a?q=80&w=2044&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          <div style="padding: 5px; display: flex; flex-direction: column;gap: 5px;">
+            <h3>Jaisalmair, Rajasthan
+            </h3>
+            <p>As one of the famous historical places in India, ments that pool together a huge crowd due to its unique look and charm. </p>
+            <button>Send Enquiry</button>
+          </div>
+        </div>
+        </div>
+        <div id="bottom">
+          <div class="place1">
+            <img src="https://images.pexels.com/photos/19843355/pexels-photo-19843355/free-photo-of-shree-mukteswara-temple.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+            <div style="padding: 5px; display: flex; flex-direction: column;gap: 5px;">
+              <h3>Temple, Soth India
+              </h3>
+              <p>As one of the famous historical places in India, ments that pool together a huge crowd due to its unique look and charm. </p>
+              <button>Send Enquiry</button>
+            </div>
+          </div>
+          <div class="place1">
+            <img src="https://media2.thrillophilia.com/images/photos/000/383/702/original/1651646655_shutterstock_441171835.jpg?w=753&h=450&dpr=1.5" alt="">
+            <div style="padding: 5px; display: flex; flex-direction: column;gap: 5px;">
+              <h3>Qutub Minar, Delhi
+              </h3>
+              <p>As one of the famous historical places in India, ments that pool together a huge crowd due to its unique look and charm. </p>
+              <button>Send Enquiry</button>
+            </div>
+          </div>
+          <div class="place1">
+            <img src="https://media2.thrillophilia.com/images/photos/000/383/703/original/1651646880_shutterstock_1078858838.jpg?w=753&h=450&dpr=1.5" alt="">
+            <div style="padding: 5px; display: flex; flex-direction: column;gap: 5px;">
+              <h3>
+                Fatehpur Sikri, Uttar Pradesh
+              </h3>
+              <p>As one of the famous historical places in India, ments that pool together a huge crowd due to its unique look and charm. </p>
+              <button>Send Enquiry</button>
+            </div>
+          </div>
+          <div class="place1">
+            <img src="https://media2.thrillophilia.com/images/photos/000/383/705/original/1651647391_shutterstock_1100136929.jpg?w=753&h=450&dpr=1.5" alt="">
+            <div style="padding: 5px; display: flex; flex-direction: column;gap: 5px;">
+              <h3>Victoria Memorial
+              </h3>
+              <p>As one of the famous historical places in India, ments that pool together a huge crowd due to its unique look and charm. </p>
+              <button>Send Enquiry</button>
+            </div>
+          </div>
+        </div>
+        <a style="text-decoration: none; color: grey;" href=""><h4 style="text-align: center;">See More</h4></a>
+      </div>
+      <footer>
+        <div id="end">
+          <div id="social">
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+          <div class="content" style="display: flex; flex-direction: column;gap:5px;">
+            <h3>About</h3>
+            <ol style="display: flex; flex-direction: column;gap:8px;">
+              <a href="">About us</a>
+              <a href="">Blog</a>
+              <a href="">Contact us</a>
+              <a href="">Advertise</a>
+            </ol>
+          </div>
+          <div class="content" style="display: flex; flex-direction: column;gap:5px;">
+            <h3>Domestic Tour Packages</h3>
+            <ol style="display: flex; flex-direction: column;gap:8px;">
+              <a href="">Andaman</a>
+              <a href="">Himachal</a>
+              <a href="">Kashmir</a>
+              <a href="">Rjasthan</a>
+            </ol>
+          </div>
+          <div class="content" style="display: flex; flex-direction: column;gap:5px;">
+            <h3>Outbound Tour Packages</h3>
+            <ol style="display: flex; flex-direction: column;gap:8px;">
+              <a href="">Bali</a>
+              <a href="">Dubai</a>
+              <a href="">Malaysia</a>
+              <a href="">Thailand</a>
+            </ol>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
